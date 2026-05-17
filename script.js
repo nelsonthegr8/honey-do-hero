@@ -355,3 +355,25 @@ document.querySelectorAll('.service-card').forEach(card => {
 });
 
 console.log('🔧 Honey-Do Hero LLC - Website initialized');
+
+// Image Carousel Logic
+function changeSlide(btn, direction) {
+    const carousel = btn.closest('.carousel');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.dot');
+    let current = [...slides].findIndex(s => s.classList.contains('active'));
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (current + direction + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+}
+function goToSlide(dot, index) {
+    const carousel = dot.closest('.carousel');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.dot');
+    dots.forEach(d => d.classList.remove('active'));
+    slides.forEach(s => s.classList.remove('active'));
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+}

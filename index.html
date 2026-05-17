@@ -96,6 +96,13 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>T.V. Installation</h3>
+                    <p>Professional T.V. installation services for all types of televisions, including wall mounting and cable management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
                         <i class="fas fa-couch"></i>
                     </div>
                     <h3>Furniture Assembly</h3>
@@ -191,18 +198,16 @@
                 <!-- Project placeholders - replace with actual project photos -->
                 <div class="project-card">
                     <div class="project-image placeholder">
-                        <i class="fas fa-image"></i>
-                        <span>Before & After</span>
+                        <img class="fas fa-image" src="./images/KitchenRemodel.jpg" alt="Kitchen Remodel">
                     </div>
                     <div class="project-info">
-                        <h3>Room Makeover</h3>
-                        <p>Complete room refresh with painting, trim repair, and fixture updates</p>
+                        <h3>Kitchen Remodel</h3>
+                        <p>Complete Kitchen refresh with Custom cabinetry, Updated appliances, Countertops, and fixture updates</p>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image placeholder">
-                        <i class="fas fa-image"></i>
-                        <span>Deck Repair</span>
+                        <img class="fas fa-image" src="./images/Deckboards.jpg" alt="Deck Repair">
                     </div>
                     <div class="project-info">
                         <h3>Deck Restoration</h3>
@@ -211,22 +216,24 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image placeholder">
-                        <i class="fas fa-image"></i>
-                        <span>Kitchen Update</span>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="./images/CouchBroken.jpg" alt="Project image 2" class="carousel-slide active">
+                                <img src="./images/CouchRepairedCrop.jpg" alt="Project image 1" class="carousel-slide">
+                                <img src="./images/CouchRepaired2Crop.jpg" alt="Project image 3" class="carousel-slide">
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="goToSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToSlide(this, 2)"></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Kitchen Cabinet Refresh</h3>
-                        <p>Refaced cabinets, installed new hardware, and updated lighting</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image placeholder">
-                        <i class="fas fa-image"></i>
-                        <span>Fence Repair</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Fence Installation</h3>
-                        <p>Repaired and reinforced fence panels, installed new gate</p>
+                        <h3>Couch Repair</h3>
+                        <p>Repaired leg frame, and restapled upholstery</p>
                     </div>
                 </div>
             </div>
@@ -256,8 +263,8 @@
                     </div>
                     <p class="review-text">"Professional, reliable, and did excellent work! Highly recommend Honey-Do Hero for any home repair needs."</p>
                     <div class="review-author">
-                        <div class="author-avatar">JD</div>
-                        <span>John D.</span>
+                        <div class="author-avatar">SF</div>
+                        <span>Santia F.</span>
                     </div>
                 </div>
                 <div class="review-card">
@@ -270,8 +277,8 @@
                     </div>
                     <p class="review-text">"Great communication and fair pricing. The weekend availability was perfect for my schedule!"</p>
                     <div class="review-author">
-                        <div class="author-avatar">SM</div>
-                        <span>Sarah M.</span>
+                        <div class="author-avatar">GC</div>
+                        <span>Gianni C.</span>
                     </div>
                 </div>
                 <div class="review-card">
@@ -284,8 +291,8 @@
                     </div>
                     <p class="review-text">"Fixed all my honey-do list items in one visit. True to the name - a real hero!"</p>
                     <div class="review-author">
-                        <div class="author-avatar">MJ</div>
-                        <span>Mike J.</span>
+                        <div class="author-avatar">MH</div>
+                        <span>Marian H.</span>
                     </div>
                 </div>
             </div>
@@ -330,7 +337,7 @@
 
                     <div class="service-areas">
                         <h3>Service Areas</h3>
-                        <p>McDonough • Locust Grove • Jackson • Newnan • Hampton • Zebulon</p>
+                        <p>McDonough • Locust Grove • Jonesboro • Stockbridge • Conyers</p>
                     </div>
                 </div>
 
@@ -390,8 +397,8 @@
                     </div>
                     <p>Your trusted local handyman for all home repair and improvement needs.</p>
                     <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://www.youtube.com/@nelsonsDIY" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
